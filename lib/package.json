@@ -1,0 +1,23 @@
+{
+  "name": "@txo/config-manager",
+  "version": "1.0.0",
+  "description": "Technology Studio - Config manager",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/technology-studio/config-manager.git"
+  },
+  "author": {
+    "name": "Technology Studio",
+    "email": "npm@technologystudio.sk",
+    "url": "https://github.com/technology-studio/"
+  },
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+  }
+}
