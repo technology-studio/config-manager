@@ -1,5 +1,0 @@
-{
-  "presets": [
-    "@txo/babel-preset",
-  ]
-}

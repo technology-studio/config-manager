@@ -1,13 +1,12 @@
 [ignore]
-; We fork some components by platform
-# .*/*[.]android.js
+<PROJECT_ROOT>/babel.config.js
 
 ; Ignore "BUCK" generated dirs
 <PROJECT_ROOT>/\.buckd/
 
 ; Ignore unexpected extra "@providesModule"
 .*/node_modules/.*/node_modules/fbjs/.*
-<PROJECT_ROOT>/node_modules/ts-.*/node_modules/.*
+<PROJECT_ROOT>/node_modules/@txo.*/node_modules/.*
 <PROJECT_ROOT>/node_modules/\([^@]\|@\([^t]\|t\([^x]\|x\([^o]\|$\)\|$\)\|$\)\|$\).*$
 
 ; Ignore duplicate module providers

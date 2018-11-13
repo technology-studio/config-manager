@@ -17,6 +17,7 @@
   "scripts": {
   },
   "dependencies": {
+    "immutability-helper": "^2.8.1"
   },
   "peerDependencies": {
   }
