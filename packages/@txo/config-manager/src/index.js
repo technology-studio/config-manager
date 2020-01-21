@@ -6,8 +6,6 @@
  * @flow
  */
 
-'use strict'; // eslint-disable-line
-
 import update from 'immutability-helper'
 
 type OnChange<CONFIG> = (config: CONFIG) => void

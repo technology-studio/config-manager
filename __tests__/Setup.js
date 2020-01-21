@@ -6,8 +6,6 @@
  * @flow
  */
 
-'use strict'; // eslint-disable-line
-
 // Mock your external modules here if needed
 // jest
 // .mock('package', () => {
