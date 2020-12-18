@@ -8,7 +8,7 @@
 
 import * as React from 'react'
 
-const PropsContext = React.createContext()
+const PropsContext = React.createContext<any>()
 
 type Props = {|
   props: Object,
@@ -16,7 +16,7 @@ type Props = {|
 |}
 
 export class PropsProvider extends React.PureComponent<Props> {
-  render () {
+  render (): React.Node {
     return (
       <PropsContext.Provider value={this.props.props}>
         {this.props.children}
@@ -25,8 +25,8 @@ export class PropsProvider extends React.PureComponent<Props> {
   }
 }
 
-export const connectPropsRelayer = (WrappedComponent) => {
-  class PropsRelayer extends React.Component {
+export const connectPropsRelayer = <PROPS>(WrappedComponent: React.ComponentType<PROPS>): React.ComponentType<any> => {
+  class PropsRelayer extends React.Component<PROPS> {
     static contextType = PropsContext
     render () {
       return (

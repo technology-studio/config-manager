@@ -12,6 +12,12 @@ test('shoud pass', () => {
   expect(true).toBe(true)
 })
 
+type Config = {
+  notTouchedValue: number,
+  toBeTouchedValue: number,
+  newValue?: number,
+}
+
 const INITIAL_CONFIG = {
   notTouchedValue: 123,
   toBeTouchedValue: 234,
@@ -37,7 +43,7 @@ describe('ConfigManager basic tests', () => {
   var configManager
 
   beforeEach(() => {
-    configManager = new ConfigManager(INITIAL_CONFIG)
+    configManager = new ConfigManager<Config>(INITIAL_CONFIG)
   })
 
   test('should contain the same reference when same configuration is updated', () => {

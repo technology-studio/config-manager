@@ -27,7 +27,7 @@ export class ConfigManager<CONFIG: Object> {
     }
   }
 
-  subscribe (onChange: (config: CONFIG) => void) {
+  subscribe (onChange: (config: CONFIG) => void): () => void {
     this.subscriptionSet.add(onChange)
     return () => this.unsubscribe(onChange)
   }
