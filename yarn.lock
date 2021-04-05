@@ -630,23 +630,10 @@
   dependencies:
     immutability-helper "^3.0.1"
 
-"@txo/functional@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@txo/functional/-/functional-4.0.1.tgz#9cf850d4cc12443c99fcb481e703c2c5e8e95e67"
-  integrity sha512-UYJoSvMOlG1MPP1Gag09FeSrN75owAudX4YnIlkFjqHfqubWLs2KuKdpO5vCi1kn1isyBTONUmYnFIvQiMzr/w==
-  dependencies:
-    "@txo/log" "^1.0.0"
-    utility-types "^3.10.0"
-
 "@txo/log-console@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@txo/log-console/-/log-console-2.0.0.tgz#9dd0b90af3b4380fe1107bfce3dae908a75d312a"
   integrity sha512-p9ece7Z4Mtcz9K9bL7SU2DgIPmGNmST5eiLSX9cAEl1F3WyrSAswxwUQtBggG6esyk/kv4TMifA2qu7Njgf70A==
-
-"@txo/log@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@txo/log/-/log-1.0.0.tgz#690ddd05fa3568833ebb95a521dd3b2caf23a917"
-  integrity sha512-zEIkfLqEK9mClHcqOAq+PTXg7yWmNmHmNNurJJVtg8gq1ZIb/FJtBRXqWRICkmhQ7RfCnilrclcnFlEhLyvNFw==
 
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.14"
@@ -5960,11 +5947,6 @@ util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
-
-utility-types@^3.10.0:
-  version "3.10.0"
-  resolved "https://registry.yarnpkg.com/utility-types/-/utility-types-3.10.0.tgz#ea4148f9a741015f05ed74fd615e1d20e6bed82b"
-  integrity sha512-O11mqxmi7wMKCo6HKFt5AhO4BwY3VV68YU07tgxfz8zJTIxr4BpsezN49Ffwy9j3ZpwwJp4fkRwjRzq3uWE6Rg==
 
 uuid@^3.3.2:
   version "3.4.0"

@@ -23,8 +23,6 @@
     "build:watch:lib": "yarn tsc --watch",
     "prepare": "yarn build"
   },
-  "dependencies": {
-    "@txo/functional": "^4.0.1"
-  },
+  "dependencies": {},
   "peerDependencies": {}
 }
