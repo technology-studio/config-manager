@@ -4,8 +4,8 @@
  * @Copyright: Technology Studio
 **/
 
-import { shallowObjectEquals } from '@txo/functional'
 import type { OnChange, ConfigValue } from '../Model/Types'
+import { shallowEqualObjects } from './ShallowEqualObjects'
 
 function isValueFunction<VALUE> (value: ConfigValue<VALUE>): value is () => VALUE {
   return typeof value === 'function'
@@ -41,8 +41,6 @@ export class ConfigManager<CONFIG extends Record<string, unknown>> {
           writable: false,
           enumerable: true,
           configurable: true,
-          get: this.get,
-          set: this.set,
           value: this.get(target, key),
         }
       },
@@ -75,7 +73,7 @@ export class ConfigManager<CONFIG extends Record<string, unknown>> {
       ...this._internalConfig,
       ...internalConfig,
     }
-    if (!shallowObjectEquals(this._internalConfig, nextInternalConfig)) {
+    if (!shallowEqualObjects(this._internalConfig, nextInternalConfig)) {
       this._internalConfig = nextInternalConfig
       this.subscriptionSet.forEach(onChange => onChange(this.config))
     }
