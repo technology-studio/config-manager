@@ -4,6 +4,7 @@
  * @Copyright: Technology Studio
 **/
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ValidValue = Record<string, any> | null | undefined
 
 export function shallowEqualObjects (objA: ValidValue, objB: ValidValue): boolean {
