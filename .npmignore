@@ -1,7 +1,9 @@
+__tests__
 .github
 .husky
 .vscode
 node_modules
+scripts
 !lib
 test
 .editorconfig
