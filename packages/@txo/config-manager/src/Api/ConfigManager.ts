@@ -4,7 +4,11 @@
  * @Copyright: Technology Studio
 **/
 
-import type { OnChange, ConfigValue } from '../Model/Types'
+import type {
+  OnChange,
+  ConfigValue,
+} from '../Model/Types'
+
 import { shallowEqualObjects } from './ShallowEqualObjects'
 
 function isValueFunction<VALUE> (value: ConfigValue<VALUE>): value is () => VALUE {
@@ -27,14 +31,9 @@ export class ConfigManager<CONFIG extends Record<string, unknown>> {
     // eslint-disable-next-line @typescript-eslint/no-this-alias
     const manager = this
     const handlers = {
-      has: (target: CONFIG, key: string) => {
-        // log.debug('has', { typeof: typeof columnKey, columnKey })
-
-        return key in manager._internalConfig
-      },
-      ownKeys: (target: CONFIG) => {
-        return Reflect.ownKeys(manager._internalConfig)
-      },
+      // log.debug('has', { typeof: typeof columnKey, columnKey })
+      has: (target: CONFIG, key: string) => key in manager._internalConfig,
+      ownKeys: (target: CONFIG) => Reflect.ownKeys(manager._internalConfig),
       getOwnPropertyDescriptor (target: CONFIG, key: string) {
         // log.debug('getOwnPropertyDescriptor', { typeof: typeof columnKey, columnKey })
         return {
@@ -49,14 +48,10 @@ export class ConfigManager<CONFIG extends Record<string, unknown>> {
         if (key in manager._internalConfig) {
           return evaluate(manager._internalConfig[key])
         }
-        // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-        throw new Error(`config attribute ${key} has not been initialized`)
+        throw new Error(`config attribute ${String(key)} has not been initialized`)
       },
-      set: (target: CONFIG, key: keyof CONFIG, value: CONFIG[typeof key]) => {
-        // log.debug('set', { changesTable, initialTable })
-
-        return false
-      },
+      // log.debug('set', { changesTable, initialTable })
+      set: (target: CONFIG, key: keyof CONFIG, value: CONFIG[typeof key]) => false,
     }
 
     this.config = new Proxy<CONFIG>(
