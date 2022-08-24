@@ -45,7 +45,7 @@
     "commitizen": "^4.2.5",
     "concurrently": "^7.3.0",
     "eslint": "^8.22.0",
-    "eslint-config-txo-typescript": "https://github.com/technology-studio/eslint-config-txo-typescript#feature/eslint-typescript-resolver",
+    "eslint-config-txo-typescript": "^3.1.0",
     "eslint-formatter-pretty": "^4.1.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.26.0",

@@ -2936,9 +2936,10 @@ eslint-config-standard@17.0.0:
   resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-17.0.0.tgz#fd5b6cf1dcf6ba8d29f200c461de2e19069888cf"
   integrity sha512-/2ks1GKyqSOkH7JFvXJicu0iMpoojkwB+f5Du/1SC0PtBL+s8v30k9njRZ21pm2drKYm2342jFnGWzttxPmZVg==
 
-"eslint-config-txo-typescript@https://github.com/technology-studio/eslint-config-txo-typescript#feature/eslint-typescript-resolver":
-  version "3.0.5"
-  resolved "https://github.com/technology-studio/eslint-config-txo-typescript#00a2f554ae725f82c5c016d353ff26e59b21f569"
+eslint-config-txo-typescript@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-txo-typescript/-/eslint-config-txo-typescript-3.1.0.tgz#85f6135e5d49ddb12e87d78ff03234eca3b8f532"
+  integrity sha512-ptOoi7BgjLoTCNm7SP8iynM/ZJQCyVvqCZl+4vAyLjQN2gO4opfQbOSx4CiZ1DuIWakcJ1KndOf16+aMLXPBaQ==
   dependencies:
     eslint-config-standard-with-typescript "^22.0.0"
     eslint-import-resolver-typescript "^3.5.0"
