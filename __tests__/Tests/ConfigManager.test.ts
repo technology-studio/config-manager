@@ -4,7 +4,8 @@
  * @Copyright: Technology Studio
 **/
 
-import { ConfigManager } from '@txo/config-manager/src'
+import { ConfigManager } from '@txo/config-manager'
+
 type Test = {
   a: string,
   b: number,
