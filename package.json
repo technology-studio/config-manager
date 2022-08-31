@@ -1,5 +1,9 @@
 {
+  "name": "@txo/config-manager",
+  "version": "3.0.1",
   "description": "Technology Studio - Config manager",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/technology-studio/config-manager.git"
@@ -10,35 +14,38 @@
     "url": "https://github.com/technology-studio/"
   },
   "license": "MIT",
-  "private": true,
+  "private": false,
   "scripts": {
+    "build": "yarn build:clean && yarn build:lib",
+    "build:clean": "yarn rimraf lib",
+    "build:lib": "yarn tsc",
+    "build:watch": "yarn tsc --watch",
     "test": "jest",
-    "test:watch": "concurrently \"yarn workspaces run build:watch\" \"jest --watch\"",
-    "build": "yarn wpd build && yarn wd build",
+    "test:watch": "concurrently \"yarn build:watch\" \"jest --watch\"",
     "coverage": "jest --coverage && open coverage/lcov-report/index.html || xdg-open coverage/lcov-report/index.html",
     "compare-boilerplate-version": "./scripts/compare-boilerplate-version.sh",
     "lint": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx .",
     "fixcode": "eslint --format=node_modules/eslint-formatter-pretty --ext .jsx,.js,.ts,.tsx . --fix",
     "git-hook": "yarn -s lint-staged",
-    "ncu-all": "yarn workspaces run ncu -i && ncu -i",
-    "postinstall": "husky install",
+    "ncu-all": "ncu -i",
+    "prepare": "husky install && yarn build",
     "print-txo-packages": "yarn list 2> /dev/null|grep @txo|sed 's/.*\\(@txo[^@]*\\)@^*\\([^ ]*\\).*/\\1@\\2/g'|sort|uniq",
     "sanity": "yarn lint && yarn build && tsc --noEmit && yarn test && yarn compare-boilerplate-version && yarn outdated && echo 'success'",
-    "update-boilerplate-version": "./scripts/update-boilerplate-version.sh",
-    "wd": "yarn workspace @txo/config-manager",
-    "wpd": "yarn workspace @txo-peer-dep/config-manager"
+    "semantic-release": "semantic-release",
+    "update-boilerplate-version": "./scripts/update-boilerplate-version.sh"
   },
-  "workspaces": [
-    "packages/@txo/*",
-    "packages/@txo-peer-dep/*"
-  ],
   "dependencies": {},
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "@txo-peer-dep/log": "^4.0.0",
     "@txo/log-console": "^3.0.0",
     "@types/jest": "^28.1.7",
     "@typescript-eslint/eslint-plugin": "^5.34.0",
     "@typescript-eslint/parser": "^5.34.0",
+    "commitizen": "^4.2.5",
     "concurrently": "^7.3.0",
     "eslint": "^8.22.0",
     "eslint-config-txo-typescript": "^3.1.0",
@@ -53,7 +60,14 @@
     "lint-staged": "^13.0.3",
     "npm-check-updates": "^16.0.5",
     "rimraf": "^3.0.2",
+    "semantic-release": "^19.0.3",
+    "semantic-release-slack-bot": "^3.5.3",
     "ts-jest": "^28.0.8",
     "typescript": "^4.7.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
