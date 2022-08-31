@@ -5,5 +5,13 @@
     ":semanticCommits",
     ":automergeMinor"
   ],
-  "rangeStrategy": "bump"
+  "rangeStrategy": "bump",
+  "assignees": [
+    "rostislav-simonik",
+    "erik-slovak"
+  ],
+  "reviewers": [
+    "rostislav-simonik",
+    "erik-slovak"
+  ]
 }
