@@ -27,10 +27,12 @@ module.exports = {
   moduleFileExtensions: [
     ...defaults.moduleFileExtensions,
   ],
-  transform: {
-    '^.+\\.tsx?$': ['ts-jest', {
-      tsconfig: './tsconfig.json'
-    }]
-  },
+
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths , { prefix: '<rootDir>/' } ),
+
+  globals: {
+    'ts-jest': {
+        tsconfig: './tsconfig.json'
+    }
+  }
 }
