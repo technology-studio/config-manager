@@ -12,7 +12,7 @@ export function shallowEqualObjects (objA: ValidValue, objB: ValidValue): boolea
     return true
   }
 
-  if (!objA || !objB) {
+  if ((objA == null) || (objB == null)) {
     return false
   }
 
