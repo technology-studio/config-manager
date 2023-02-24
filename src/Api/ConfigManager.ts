@@ -70,13 +70,13 @@ export class ConfigManager<CONFIG extends Record<string, unknown>> {
     }
     if (!shallowEqualObjects(this._internalConfig, nextInternalConfig)) {
       this._internalConfig = nextInternalConfig
-      this.subscriptionSet.forEach(onChange => onChange(this.config))
+      this.subscriptionSet.forEach(onChange => { onChange(this.config) })
     }
   }
 
   subscribe (onChange: (config: CONFIG) => void): () => void {
     this.subscriptionSet.add(onChange)
-    return () => this.unsubscribe(onChange)
+    return () => { this.unsubscribe(onChange) }
   }
 
   unsubscribe (onChange: (config: CONFIG) => void): void {
