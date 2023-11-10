@@ -1,3 +1,22 @@
+## [3.2.0](https://github.com/technology-studio/config-manager/compare/v3.1.0...v3.2.0) (2023-11-10)
+
+
+### CI
+
+* add codecov upload into release githbub action workflow ([662adc6](https://github.com/technology-studio/config-manager/commit/662adc630d215d567ef0b51f62ad516f326b9226))
+* add coverage generation into test step at release ([0c51312](https://github.com/technology-studio/config-manager/commit/0c51312d42f7220cfc2e836ea321a95781719eb2))
+* change npmignore to whitelist ([#20](https://github.com/technology-studio/config-manager/issues/20)) ([892e945](https://github.com/technology-studio/config-manager/commit/892e9459161d09ef2d2051b6d9ad6dff0f593a93))
+
+
+### Features
+
+* migrate to flat eslint config ([#456](https://github.com/technology-studio/config-manager/issues/456)) ([002c7b0](https://github.com/technology-studio/config-manager/commit/002c7b0df691e105c51c35375331857658aaa9ea))
+
+
+### Testing
+
+* add test for allowed dependencies ([#357](https://github.com/technology-studio/config-manager/issues/357)) ([4080fe3](https://github.com/technology-studio/config-manager/commit/4080fe32485ed7a6feea47ba99953ea9890f040b))
+
 ## [3.1.0](https://github.com/technology-studio/config-manager/compare/v3.0.1...v3.1.0) (2022-08-31)
 
 
