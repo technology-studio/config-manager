@@ -1,0 +1,12 @@
+[
+  "@typescript-eslint/no-magic-numbers",
+  "@typescript-eslint/no-unnecessary-condition",
+  "eslint-comments/require-description",
+  "@stylistic/space-before-function-paren",
+  "consistent-this",
+  "@stylistic/arrow-parens",
+  "@stylistic/max-statements-per-line",
+  "complexity",
+  "@typescript-eslint/prefer-destructuring",
+  "@typescript-eslint/consistent-type-exports"
+]
