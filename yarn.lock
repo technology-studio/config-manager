@@ -1331,10 +1331,10 @@
   dependencies:
     "@sinonjs/commons" "^2.0.0"
 
-"@stylistic/eslint-plugin@^2.12.1":
-  version "2.12.1"
-  resolved "https://registry.yarnpkg.com/@stylistic/eslint-plugin/-/eslint-plugin-2.12.1.tgz#e341beb4e4315084d8be20bceeeda7d8a46f079f"
-  integrity sha512-fubZKIHSPuo07FgRTn6S4Nl0uXPRPYVNpyZzIDGfp7Fny6JjNus6kReLD7NI380JXi4HtUTSOZ34LBuNPO1XLQ==
+"@stylistic/eslint-plugin@^2.13.0":
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/@stylistic/eslint-plugin/-/eslint-plugin-2.13.0.tgz#53bf175dac8c1ec055b370a6ff77d491cae9a70d"
+  integrity sha512-RnO1SaiCFHn666wNz2QfZEFxvmiNRqhzaMXHXxXXKt+MEP7aajlPxUSMIQpKAaJfverpovEYqjBOXDq6dDcaOQ==
   dependencies:
     "@typescript-eslint/utils" "^8.13.0"
     eslint-visitor-keys "^4.2.0"
@@ -2926,10 +2926,10 @@ eslint-compat-utils@^0.5.1:
   dependencies:
     semver "^7.5.4"
 
-eslint-config-love@^114.0.0:
-  version "114.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-love/-/eslint-config-love-114.0.0.tgz#d1b2132f2a7c4a7a281117dc7ac43198287ac821"
-  integrity sha512-PScXVLQge1nucu1GZUGmYaGNZrSlI4d09W4a16GtZA2Ht/Hx2V3f7znBRiAFzqJ4yAcWuDAmXiyrbMmNYEeslA==
+eslint-config-love@^116.0.0:
+  version "116.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-love/-/eslint-config-love-116.0.0.tgz#743cea82a0e818c8307b73e076b7f5fe0fe9e453"
+  integrity sha512-2yoMgcWe+4GvS+Y7G4F/evjZqpEuAn51AiSRsCDCBSNpH9JlPl8TbB+qXOtDGDmgpN/5QL0rSWh1+M5FlfaYCw==
   dependencies:
     "@typescript-eslint/utils" "^8.15.0"
     eslint-plugin-eslint-comments "^3.2.0"
@@ -2938,23 +2938,23 @@ eslint-config-love@^114.0.0:
     eslint-plugin-promise "^7.0.0"
     typescript-eslint "^8.15.0"
 
-eslint-config-txo-package-typescript@^1.0.21:
-  version "1.0.21"
-  resolved "https://registry.yarnpkg.com/eslint-config-txo-package-typescript/-/eslint-config-txo-package-typescript-1.0.21.tgz#9d6b9445260b750366d2ab1f95393c88d5153d38"
-  integrity sha512-0Y3b2oXfiz0KSd8yTxjV7p/U3MO40PdxVbBugJhazD2iz3BrYFYMTg6nhaQeUlQ27d10kpA+NLWKVBEDvweq1g==
+eslint-config-txo-package-typescript@^1.0.23:
+  version "1.0.23"
+  resolved "https://registry.yarnpkg.com/eslint-config-txo-package-typescript/-/eslint-config-txo-package-typescript-1.0.23.tgz#69e110f3ecb789515b46728205e0c6a698f58416"
+  integrity sha512-SJC9FZ6K4dx7NoqZYNSKc0BA0c47KVLhU++P80bvNI4FbP4mc9FXmMpC9tS4lgnzM+XqgWAR34AJk4gQMY437g==
   dependencies:
-    eslint-config-txo-typescript "^7.3.16"
+    eslint-config-txo-typescript "^7.3.18"
 
-eslint-config-txo-typescript@^7.3.16:
-  version "7.3.16"
-  resolved "https://registry.yarnpkg.com/eslint-config-txo-typescript/-/eslint-config-txo-typescript-7.3.16.tgz#ab0a4db9ab31b8dd524a38570555bad14905b554"
-  integrity sha512-m/oIu4kFXbH1j9d/cwBkAF06tn2PX7K32XTTEgCRVnbz3LaVtq43s9t01XIOeCb7n2Wf0IWayz1vZ3jI1wZSWQ==
+eslint-config-txo-typescript@^7.3.18:
+  version "7.3.18"
+  resolved "https://registry.yarnpkg.com/eslint-config-txo-typescript/-/eslint-config-txo-typescript-7.3.18.tgz#2c143726f7a3c01cfbc14f55403e3cde2fcbe164"
+  integrity sha512-M2HowIQXPJ4YhvjUXx+5PbI8gsNlvpDjDLvTL+QrHKaSrIT0Ssn0dhRIHSRD8nQrWP4feCVw4JhrrMFdnEvIWg==
   dependencies:
     "@eslint-community/eslint-plugin-eslint-comments" "^4.4.1"
-    "@stylistic/eslint-plugin" "^2.12.1"
+    "@stylistic/eslint-plugin" "^2.13.0"
     "@typescript-eslint/utils" "^8.19.1"
     eslint "^9.18.0"
-    eslint-config-love "^114.0.0"
+    eslint-config-love "^116.0.0"
     eslint-import-resolver-typescript "^3.7.0"
     eslint-plugin-import "^2.31.0"
     eslint-plugin-jest "^28.10.0"
