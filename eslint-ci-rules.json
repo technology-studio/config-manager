@@ -6,7 +6,6 @@
   "consistent-this",
   "@stylistic/arrow-parens",
   "@stylistic/max-statements-per-line",
-  "complexity",
   "@typescript-eslint/prefer-destructuring",
   "@typescript-eslint/consistent-type-exports"
 ]
